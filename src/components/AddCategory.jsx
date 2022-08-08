@@ -2,7 +2,7 @@ import { useState } from "react";
 // import propTypes from "prop-types";
 
 
-const AddCategory = ({onNewCategory}) => {
+export const AddCategory = ({onNewCategory}) => {
   const [inputValue, setInputValue] = useState("");
   const onInputChange = ({ target }) => {
     // console.log(target.value);
@@ -28,6 +28,6 @@ const AddCategory = ({onNewCategory}) => {
     </form>
   );
 };
-export default AddCategory;
+// export default AddCategory;
 
 

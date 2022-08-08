@@ -1,12 +1,10 @@
 import { useState } from "react";
-import AddCategory from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import  {GifGrid, AddCategory}  from "./components";
 
 const category = ["One Punch"];
 
 const GifExpertApp = () => {
   const [categories, setCategories] = useState(category);
-  // console.log(categories);
 
   const onAddCategorie = (newCategory) => {
     if (categories.includes(newCategory)) return; // es este linea se hace que cada string sea único
@@ -17,7 +15,6 @@ const GifExpertApp = () => {
   return (
     <>
       <h1>GifExpert App</h1>
-      {/* Input */}
       <AddCategory
         //  setCategories={setCategories}
         onNewCategory={(loquesea) => onAddCategorie(loquesea)}
